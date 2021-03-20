@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+:root {
+    --color_1: rgba(255, 255, 255, 0.253);
+    --color_2: rgba(27, 27, 50, 0.8);
+    --color_3: rgb(255, 251, 0);
+    --color_4: rgb(255, 255, 255);
+    --color_4t: rgba(255, 255, 255, 0.582);
+    --color_5: rgba(255, 255, 255, 0.247);
+    --color_6: rgba(0, 0, 0);
+}
+
+* {
+    padding: 0;
+    outline: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+body::after {
+    content: "";
+    /*  background: var(--color_2) url(/img/fodocss.jpg) center/cover no-repeat; */
+    background-image: linear-gradient( 115deg, rgba(29, 29, 184, 0.479), rgba(136, 136, 206, 0.425)), url(/img/fodocss.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+/* Estas tres propiedades hacen a  un medio flexible */
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* *Estilos generales (first mobile)* */
+
+.container {
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+
+.form-1 {
+    margin: 0 auto 0 auto;
+    padding: 1rem;
+    width: 100%;
+    background-color: var(--color_5);
+    border: solid var(--color_1) 0.05rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    /*backdrop-filter: blur(0.1rem);
+    */backdrop-filter: blur(0.2rem);
+    -webkit-backdrop-filter: blur(0.2rem);
+    -moz-backdrop-filter: blur(0.2rem);
+    -ms-backdrop-filter: blur(0.2rem);
+    -o-backdrop-filter: blur(0.2rem);
+}
+
+.form-1--colorfuente {
+    color: var(--color_3)
+}
+
+.form-1__campo {
+    margin-bottom: 1rem;
+}
+
+/* .form-1__campo--center {}
+
+.form-1__checkbox {} */
+
+.form-1__input {
+    display: block;
+    -webkit-display: block;
+    background: none;
+    border: none;
+    border-bottom: dotted 1px var(--color_3);
+    width: 90%;
+    margin-bottom: 2rem;
+}
+
+.form-1__input::placeholder {
+    color: var(--color_4t);
+    text-shadow: 1px 1px 1px var(--color_6);
+    font-size: 1.2em;
+}
+
+.form-1__inputcheckbox {
+    color: var(--color_4);
+    text-shadow: 1px 1px 1px var(--color_6);
+}
+
+/* .form-1__inputradio {} */
+
+.form-1__label {
+    color: var(--color_4);
+    text-shadow: 1px 1px 1px var(--color_6);
+}
+
+/* .form-1__label--before::after {}
+
+.form-1__labelcheckbox {}
+ */
+
+.form-1__labelradio {
+    color: var(--color_4);
+    text-shadow: 1px 1px 1px var(--color_6);
+}
+
+.form-1__p {
+    color: var(--color_4);
+    text-shadow: 1px 1px 1px var(--color_6);
+}
+
+/* .form-1__radio {}
+
+.form-1__selectlike {}
+
+.form-1__selectrole {}
+ */
+
+.form-1__span {
+    font-size: 0.7rem;
+    text-shadow: 1px 1px 1px var(--color_6);
+}
+
+.form-1__submitbutton {
+    display: block;
+    margin: 1.3rem auto 0 auto;
+    width: 25%;
+    padding: 0.4rem;
+    background: rgba(255, 255, 255, 0.281);
+    backdrop-filter: blur(0.8rem);
+    color: var(--color_4);
+    text-shadow: 1px 1px 1px var(--color_6);
+    border: 0.05rem var(--color_2) solid;
+}
+
+.form-1__textarea {
+    display: flex;
+    -webkit-display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    background: none;
+    border: none;
+    font-size: 1em;
+    padding: 0.6rem;
+    min-height: 60px;
+    width: 100%;
+    resize: none;
+    background: rgba(255, 255, 255, 0.226);
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+.form-1__textarea::placeholder {
+    color: var(--color_4);
+    text-shadow: 1px 1px 1px var(--color_6);
+    font-size: 0.7rem;
+}
+
+.form-1__textarea:focus {
+    background: rgb(255, 255, 255);
+    border: 2px var(--color_5) dotted;
+    background: none;
+}
+
+/* .form-1--textcenter {} */
+
+.form-1--textitalic {
+    font-style: italic;
+}
+
+.header {
+    width: 100%;
+}
+
+.header__h1 {
+    color: var(--color_3);
+    text-shadow: 2px 2px 1px var(--color_6);
+    font-size: 1.5rem;
+}
+
+.header__p {
+    color: var(--color_3);
+    text-shadow: 2px 2px 1px var(--color_6);
+    font-size: 1.2rem;
+}
+
+.header--textcenter {
+    text-align: center;
+}
+
+.header--textitalic {
+    font-style: italic;
+}
+
+@media (min-width: 20em) {
+    .form-1__textarea {
+        /*       width: 90%; */
+        min-height: 70px;
+    }
+    .header__h1 {
+        font-size: 1.5rem;
+    }
+    .header__p {
+        font-size: 1rem;
+    }
+    .form-1__input--largo {
+        width: 2rem;
+    }
+    /*     .form-1__input--largo {
+        width: 1rem;
+    } */
+}
+
+@media (min-width: 30em) {
+    .form-1 {
+        padding: 1rem;
+        width: 80%;
+    }
+    .form-1__textarea {
+        min-height: 90px;
+    }
+    .form-1__input {
+        width: 15rem;
+    }
+    .form-1__input--largo {
+        width: 2rem;
+    }
+    /*     .form-1__input--largo {
+        width: 1rem;
+    } */
+    .header__h1 {
+        font-size: 2.5rem;
+    }
+    .header__p {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 37.5em) {
+    .form-1 {
+        padding: 1rem;
+        width: 81%;
+    }
+    .header__h1 {
+        font-size: 3rem;
+    }
+    .header__p {
+        font-size: 2rem;
+    }
+    .form-1__input--largo {
+        width: 2rem;
+    }
+    .form-1__label {
+        font-size: 1.2rem;
+    }
+    .form-1__textarea {
+        /*     width: 90%; */
+        min-height: 100px;
+    }
+}
+
+@media (min-width: 48em) {
+    .form-1 {
+        padding: 1rem;
+        width: 75%;
+    }
+    .header__h1 {
+        font-size: 3.8rem;
+    }
+    .header__p {
+        font-size: 2rem;
+    }
+    .form-1__input--largo {
+        width: 2rem;
+    }
+    .form-1__textarea {
+        /*     width: 80%; */
+        min-height: 110px;
+    }
+}
+
+@media (min-width: 75em) {
+    .form-1 {
+        padding: 1rem;
+        width: 50%;
+    }
+    .header__h1 {
+        font-size: 5.8rem;
+    }
+    .header__p {
+        font-size: 2.5rem;
+    }
+    .form-1__input--largo {
+        width: 2rem;
+    }
+    .form-1__label {
+        font-size: 1.2rem;
+    }
+    .form-1__textarea {
+        /*     width: 80%; */
+        min-height: 160px;
+    }
+}

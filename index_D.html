@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_D.css">
+    <title>Formulario de Ecuestas comerciantes de Peribeca</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <header class="header">
+                <h1 id="title" class="header__h1   header--textcenter ">
+                    Formulario de Practica Alex Guzmán
+                </h1>
+                <p id="description" class="header--textcenter header--textitalic   header__p">
+                    Practica de de Formulario
+                </p>
+            </header>
+            <form id="survey-form" class="form-1" action="#">
+                <div class="form-1__campo">
+                    <label for="name" class="form-1__label" >
+                        Nombre <span class="form-1--colorfuente  form-1__span">(* Obligatorio)</span>
+                    </label>
+                    <input type="text"  id="name" class="form-1__input" name="name"   placeholder="Por favor introdusca su Nombre" autocomplete required autofocus size="30">
+                </div>
+                <div class="form-1__campo">
+                    <label for="email" class="form-1__label" >
+                        Email <span class="form-1--colorfuente  form-1__span">(* Obligatorio)</span>
+                    </label>
+                    <input type="email" name="email" id="email"  class="form-1__input  " placeholder="Por favor intrdusca su email" autocomplete required size="30">
+                </div>
+                <div class="form-1__campo">
+                    <label  for="edad" class="form-1__label  form-1__label--before " >
+                        Edad <span class="form-1--colorfuente  form-1__span">(* Obligatorio)</span>
+                    </label>
+                    <input type="number" name=" edad"  id="edad"  class="form-1__input  form-1__input--largo " min="10" max="90"  requiredsi  size="02">
+                </div>
+                <div class="form-1__campo">
+                    <p class="form-1__p">¿Que opcion se ajusta a su roll actual? <span class="form-1--colorfuente  form-1__span">(* Obligatorio)</span></p>
+                    <select  id="role" class="form-1__selectrole" name="role" required>
+                        <option disabled selected value>Select current role </option>
+                        <option value="student"> Student</option>
+                        <option value="job"> Full Time Job</option>
+                        <option value="learner">Full Time Learner </option>
+                        <option value="referNo">Prefer not to say </option>
+                        <option value="other"> Other</option>
+                    </select>
+                </div>
+                <div class="form-1__campo">
+                    <div class="form-1__radio">
+                        <p class="form-1__p">¿Recomendarias a freeCodeCamp a un amigo? <span class="form-1--colorfuente  form-1__span">(* Obligatorio)</span></p>
+                        <label class="form-1__labelradio">
+                            <input type="radio" name="recomendacion" class="form-1__inputradio" value="definitivamente">
+                            Definitely
+                        </label>
+                    </div>
+                    <div class="form-1__radio">
+                        <label class="form-1__labelradio">
+                            <input type="radio" name="recomendacion" class="form-1__inputradio" value="quizas" required>
+                            Maybe
+                        </label>
+                    </div>
+                    <div class="form-1__radio">
+                        <label class="form-1__labelradio">
+                            <input type="radio" name="recomendacion" class="form-1__inputradio" value="no-seguro">
+                            Not sure
+                        </label>
+                    </div>
+                </div>
+                <div class="form-1__campo">
+                    <p class="form-1__p">¿Cual es la caracteristica favorita de freeCodeCamp para ti ? <span class="form-1--colorfuente  form-1__span">(* Obligatorio)</span></p>
+                    <select id="most-like" name="preferida" class="form-1__selectlike" required>
+                        <option disabled selected value>Select an option</option>
+                        <option value="challenges">Challenges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="openSource">Open Source</option>
+                    </select>
+                </div>
+                <div class="form-1__campo">
+                    <p class="form-1__p">¿Que te gustaria ver mejorado?</p>
+                    <span class="form-1__span  form-1--colorfuente  form-1--textitalic">(* Puedes seleccionarlas Todas)</span>
+                    <div class="form-1__checkbox">
+                        <label class="form-1__labelcheckbox form-1__inputcheckbox ">
+                            <input name="prefer" value="front-end-projects" type="checkbox"/>Front-end Projects
+                        </label>
+                    </div>
+                    <div class="form-1__checkbox">
+                        <label class="form-1__labelcheckbox form-1__inputcheckbox  ">
+                            <input name="prefer" value="front-end-projects" type="checkbox"  />Back-end Projects
+                        </label>
+                    </div>
+                    <div class="form-1__checkbox">
+                        <label class="form-1__labelcheckbox form-1__inputcheckbox ">
+                            <input name="prefer" value="front-end-projects" type="checkbox"/>
+                            Data Visualization
+                        </label>
+                    </div>
+                    <div class="form-1__checkbox">
+                        <label class="form-1__labelcheckbox form-1__inputcheckbox ">
+                            <input name="prefer" value="front-end-projects" type="checkbox"/>Challenges
+                        </label>
+                    </div>
+                    <div class="form-1__checkbox">
+                        <label class="form-1__labelcheckbox form-1__inputcheckbox  ">
+                            <input name="prefer" value="front-end-projects" type="checkbox"/>Open Source Community
+                        </label>
+                    </div>
+                    <div class="form-1__checkbox">
+                        <label class="form-1__labelcheckbox form-1__inputcheckbox  ">
+                            <input name="prefer" value="front-end-projects" type="checkbox"/>Gitter help rooms
+                        </label>
+                    </div>
+                    <div class="form-1__checkbox">
+                        <label class="form-1__labelcheckbox form-1__inputcheckbox  ">
+                            <input name="prefer" value="front-end-projects" type="checkbox"/>Videos
+                        </label>
+                    </div>
+                    <div class="form-1__checkbox">
+                        <label class="form-1__labelcheckbox form-1__inputcheckbox  ">
+                            <input name="prefer" value="front-end-projects" type="checkbox"/>City Meetups
+                        </label>
+                    </div>
+                    <div class="form-1__checkbox">
+                        <label class="form-1__labelcheckbox form-1__inputcheckbox  ">
+                            <input name="prefer" value="front-end-projects" type="checkbox"/>Wiki
+                        </label>
+                    </div>
+                    <div class="form-1__checkbox">
+                        <label class="form-1__labelcheckbox form-1__inputcheckbox  ">
+                            <input name="prefer" value="front-end-projects" type="checkbox"/>Forum
+                        </label>
+                    </div>
+                    <div class="form-1__checkbox">
+                        <label class="form-1__labelcheckbox form-1__inputcheckbox  ">
+                            <input name="prefer" value="front-end-projects" type="checkbox"/>Additional Courses
+                        </label>
+                    </div>
+                </div>
+                <div class="form-1__campo  form-1__campo--center  "  >
+                    <p class="form-1__p" >¿Cualquier comentario o suderencia?</p>
+                    <textarea id="comments"  class="form-1__textarea "  name="comment" placeholder="Introdusca su comentario aqui..."></textarea>
+                </div>
+                <div class="form-1__campo ">
+                    <button type="submit" id="submit" class="form-1__submitbutton">
+                        Enviar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
